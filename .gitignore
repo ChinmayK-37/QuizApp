@@ -1,3 +1,6 @@
 /docs
 .docx
 .env
+
+.vscode/
+.project
