@@ -25,7 +25,7 @@ public class GeminiController {
         return geminiService.generateQuestions(topic);
     }
 
-    // ✅ Test endpoint (optional)
+    
     @GetMapping("/test")
     public Map<String, String> test() {
         return Map.of(

@@ -18,7 +18,7 @@ public class JsontoStringService {
             // 2. Convert the cleaned String into a Map
             return objectMapper.readValue(cleanJson, new TypeReference<Map<String, Object>>() {});
         } catch (Exception e) {
-            // In a real app, you'd log this and perhaps retry the AI call
+           
             throw new RuntimeException("Failed to parse Gemini response into JSON: " + e.getMessage());
         }
     }

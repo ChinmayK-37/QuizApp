@@ -19,9 +19,9 @@ const Navbar = ({ playerName = "Player" }) => {
 
         {/* ── Nav links (hidden on small screens) ─── */}
         <div className="hidden sm:flex items-center gap-7">
-          {["Leaderboard", "How to Play", "About"].map((item) => (
-            <a key={item} className={gs.navLink}>{item}</a>
-          ))}
+          <Link to="/leaderboard" className={gs.navLink}>Leaderboard</Link>
+          <Link to="/how-to-play" className={gs.navLink}>How to Play</Link>
+          <Link to="/about" className={gs.navLink}>About</Link>
         </div>
 
         {/* ── Player identity ──────────────────────── */}
